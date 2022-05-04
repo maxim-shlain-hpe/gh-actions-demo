@@ -1,10 +1,9 @@
 name: .NET
 
 on:
-  push:
-    branches: [ main ]
+  release:
   pull_request:
-    branches: [ main ]
+     branches: [ main ]
 
 jobs:
   build:
@@ -19,11 +18,12 @@ jobs:
       with:
         dotnet-version: 6.0.x
 
+    - name: Get the version
+      id: get_version
+      run: echo ::set-output name=VERSION::$(echo $GITHUB_REF | cut -d / -f 3)
+
     - name: Restore dependencies
       run: dotnet restore
 
     - name: Build
-      run: dotnet build --no-restore
-
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet build --no-restore -property:"Version=${{ steps.get_version.outputs.VERSION }}"

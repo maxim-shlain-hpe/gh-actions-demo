@@ -9,11 +9,13 @@
     <Company>MaximShlain</Company>
     <Product>MaximShlain.Demo.Calculator</Product>
     <Description>Just a demo package</Description>
-	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>                     
+	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
+	  <Version>1.0.1</Version>
   </PropertyGroup>
 
    <ItemGroup>
-      <PackageReference Include="NuGet.Build.Tasks.Pack" Version="5.2.0"/>
+      <PackageReference Include="NuGet.Build.Tasks.Pack" Version="5.2.0" />
    </ItemGroup>
 	
 </Project>
