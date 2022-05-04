@@ -4,7 +4,7 @@
     {
         public int Sum(int one, int another)
         {
-            return 42;
+            return one + another;
         }
     }
 }
