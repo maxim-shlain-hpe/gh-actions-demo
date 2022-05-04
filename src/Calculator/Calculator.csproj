@@ -9,9 +9,9 @@
     <Company>MaximShlain</Company>
     <Product>MaximShlain.Demo.Calculator</Product>
     <Description>Just a demo package</Description>
-	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-	<PackageLicenseExpression>MIT</PackageLicenseExpression>
-	<Version>1.0.1</Version>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>                     
+	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
+	  <Version>1.0.1</Version>
   </PropertyGroup>
 
    <ItemGroup>
