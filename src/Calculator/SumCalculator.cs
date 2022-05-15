@@ -2,9 +2,9 @@
 {
     public class SumCalculator
     {
-        public int Sum(int one, int another)
+        public int Sum(int x, int y)
         {
-            return one + another;
+            return x + y;
         }
     }
 }
