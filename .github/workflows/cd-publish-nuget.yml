@@ -1,8 +1,8 @@
-name: CD-PublishNuget
+name: CD publish nuget on new release published
 
 on:
   release:
-    published
+    types: [published]
 
 jobs:
   build:
