@@ -1,4 +1,4 @@
-name: .NET
+name: CI build and test every pull request and merge to main
 
 on:
   push:
