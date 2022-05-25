@@ -9,7 +9,7 @@
 
         public int Multiply(int x, int y)
         {
-            return 42;
+            return x * y;
         }
     }
 }
