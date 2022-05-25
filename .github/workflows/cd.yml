@@ -1,7 +1,8 @@
-name: .NET
+name: CD-PublishNuget
 
 on:
   release:
+    published
 
 jobs:
   build:
