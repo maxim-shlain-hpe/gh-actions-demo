@@ -22,7 +22,7 @@ jobs:
     - name: Run dotnet format
       uses: xt0rted/dotnet-format@v1
       with:
-        only-changed-files: "true"
+        only-changed-files: "false"
 
     - name: Restore dependencies
       run: dotnet restore
