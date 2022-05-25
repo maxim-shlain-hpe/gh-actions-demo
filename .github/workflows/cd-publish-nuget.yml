@@ -1,7 +1,8 @@
-name: .NET
+name: CD publish nuget on new release published
 
 on:
   release:
+    types: [published]
 
 jobs:
   build:
